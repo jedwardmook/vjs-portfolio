@@ -178,7 +178,6 @@ body {
  #projects {
     display: flex;
     flex-direction: column;
-    align-items: end;
     margin-top: -1010px;
     margin-left: 130px;
     z-index: 1;
@@ -189,6 +188,61 @@ body {
     font-size: 140px;
     font-family: "HelveticaNeue-CondensedBlack";
     color: white;
+    text-align: end;
+    margin-bottom: 20px;
     -webkit-text-stroke: 2px black;
  }
 
+ #hero_project_container {
+    margin-top: -10px;
+ }
+
+ #hero_project {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-left: 50px;
+    font-family: "HelveticaNeue-CondensedBlack";
+ }
+
+ #hero_project_info {
+    width: 40vw;
+    margin-top: -20px;
+ }
+
+ #hero_project_image {
+    width: 25vw;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-left: 25px;
+ }
+
+ #hero_project_key {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 0px;
+ }
+
+ #hero_project_key_desc {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 10px;
+ }
+
+ #hero_project_info p {
+    margin-top: 0px;
+ }
+
+ #hero_project_info a {
+    margin-bottom: -40px;
+    padding-bottom: -10px;
+ }
+
+ .hero_project_value {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-bottom: -20px;
+ }
