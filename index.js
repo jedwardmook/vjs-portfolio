@@ -5,24 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     heroProject.id = "hero_project";
 
     const projectsContainer = document.getElementById('projects_container')
-    
-    // heroProject.innerHTML =`
-    //     <div id="hero_project_info">
-    //       <h4 id="hero_project_key">Project Name:</h4><p class="hero_project_value"> ${projectName}<p>
-    //       <h4 id="hero_project_key">Link:</h4><a href="${links}" class="hero_project_value">${links}</a>
-    //       <h4 id="hero_project_key_desc">Description:</h4><p class="hero_project_value"> ${description}<p>
-    //       <h4 id="hero_project_key">Technologies Used:</h4><p class="hero_project_value"> ${technologysUsed}<p>
-    //     </div>
-    //     <div>
-    //         <img src=${image} alt="${projectName}" id="hero_project_image"/>
-    //     </div>`;
-    // heroContainer.append(heroProject);
+
+    const face = document.getElementById('face')
+    face.addEventListener('click', () => meOrNotToggle())
+    let meOrNot = false
 
     function renderHeroProject(project){
         const { projectName, links, description, technologysUsed, image} = project
         const heroContainer = document.getElementById("hero_project_container")
-        // const heroProject = document.createElement("div");
-        // heroProject.id = "hero_project";
         heroProject.innerHTML =`
             <div id="hero_project_info">
               <h4 id="hero_project_key">Project Name:</h4><p class="hero_project_value"> ${projectName}<p>
@@ -84,8 +74,19 @@ document.addEventListener("DOMContentLoaded", () => {
         
     }
     
-
     projects.slice(projectsStart,projectsEnd).forEach(renderProject)
+
+    function meOrNotToggle(){
+        const meOrNotImg = document.getElementById("meOrNot")
+        if (!meOrNot) {
+            meOrNot = true
+            meOrNotImg.attributes.src.value = "images/me.png"
+        } else {
+            meOrNot = false
+            console.log(meOrNotImg.attributes)
+        }
+
+    }
 
 })
 

@@ -96,7 +96,7 @@ body {
     font-size: 40px;
     z-index: 1;
     margin-top: -115px;
-    margin-right: 5vw;
+    margin-right: 1vw;
     margin-left: -1vw;
     transform: skew(-16deg, 17deg);
  }
@@ -122,6 +122,7 @@ body {
  #social_link {
     z-index: 1;
     padding-right: 1vw;
+    padding-top: .5vh;
     width: 16vw;
     height: 50px;
     background-color: #FF6868;
@@ -312,5 +313,11 @@ body {
     cursor: pointer;
     filter: drop-shadow(0 4px 4px rgb(0, 0, 0, .25));
  }
+
+#meOrNot {
+    width: 300px;
+    height: 300px;
+    border-radius: 350px;
+}
 
 
