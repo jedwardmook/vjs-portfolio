@@ -13,25 +13,27 @@
         <header id="header">
             <h3 id="header_logo">John E. Mook</h3>
             <nav id="header_nav">
-                <a href="">Home</a>
+                <a href="#header">Home</a>
                 <a href="#projects_div">Projects</a>
-                <a href="#contact_div">Contact</a>
+                <a href="#contact_reach_out">Contact</a>
             </nav>
         </header>
-        <main id="home">
-            <div id="shapes">
+        <main id="main_div">
+        <section id="home">
                 <div id="parallelogram">
                 </div>
                 <div id="bio">
-                    <div id="bio_hello_face">
+                    <div id="bio_hello">
                         <h1 id="hello"><strong>Hello!</strong> My name is John Mook</h1>
-                        <div id="face">
-                            <img id="meOrNot" src="" alt="" />
-                        </div>
                     </div>
+                    <div id="info_face">
                     <p id="info">I’m a recent graduate of Flatiron’s Software Engineering bootcamp. With over a decade of experience in the coffee industry, I've honed my skills in customer service and collaboration, which I'm now applying to my new role as a 
                         software engineer. As someone who's passionate about helping people, I'm looking forward to using my skills to create innovative solutions that make a difference in people's lives. Whether the project is as simple as a black coffee or
                         as complex as a social media app, I strive to make sure everyone gets what they need.</p>
+                    <div id="face">
+                        <img id="meOrNot" src="./images/me.svg" alt="" />
+                    </div>
+                    </div>
                     <div id="bio_links">
                         <div id="social_links">
                             <a href="https://medium.com/@jedwardmook" id="social_link">Blog</a>
@@ -41,14 +43,12 @@
                         <button id="contact">Reach Out!</button>
                     </div>  
                     </div>
-            </div>
-        </main>
-        <main id="projects_div">
-            <div id="shapes">
+        </section>
+        <section id="projects_div">
                 <div id="projectgram">
                 </div>
                 <div id="projects">
-                    <h1>Projects</h1>
+                    <h1 id="projects_header">Projects</h1>
                     <div id="hero_project_container">
 
                     </div>
@@ -59,35 +59,36 @@
                         <button id="decrease_scroll_button">Left</button>
                         <button id="increase_scroll_button">Right</button>
                     </div>
-                </div>
-            </div>
-        </main>
-        <main id="contact_div">
-            <div id="shapes"></div>
-                <div id="contactgram"></div>
-                <div id="reach_out">
-                    <div id="reach_out_header">
-                        <h1>REACH OUT!</h1>
-                        <button></button>
+                    <div>
+                        <h1 id="contact_reach_out">REACH OUT!</h1>
                     </div>
-                    <form id="contact_form" action="mailto:jedwardmook@gmail.com" method="get" enctype="text/plain">
-                        <div id="contact_form_two">
-                            <div id="contact_half_div">
-                                <h4>Name:</h4><br>
-                                <input type="text" name="subject" placeholder="Your Name">
-                            </div>
-                            <div id="contact_half_div">
-                                <h4>Email:</h4><br>
-                                <input type="email" name="subject" placeholder="Your Name">
-                            </div>
-                        </div>
-                        <h4>Subject:</h4><br>
-                        <input type="email" name="email" placeholder="Your Email"><br>
-                        <h4>Message:</h4><br>
-                        <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
-                        <input type="submit" value="Send">
-                    </form>
+                </div>   
+        </section>
+        <section id="contact_div">
+            <div id="contactgram"></div>
+            <div id="reach_out">
+                <div id="reach_out_header">
+                    <button></button>  
                 </div>
-        </main>
+                <form id="contact_form" action="mailto:jedwardmook@gmail.com" method="get" enctype="text/plain">
+                    <div id="contact_form_two">
+                        <div id="contact_half_div">
+                            <h4>Name:</h4><br>
+                            <input type="text" name="subject" placeholder="Your Name">
+                        </div>
+                        <div id="contact_half_div">
+                            <h4>Email:</h4><br>
+                            <input type="email" name="subject" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <h4>Subject:</h4><br>
+                    <input type="email" name="email" placeholder="Your Email"><br>
+                    <h4>Message:</h4><br>
+                    <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            </section>
+    </main>
     </body>
 </html>

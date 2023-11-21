@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+}
+
 body {
     font-family: helvetica;
     margin: 0rem;
@@ -36,32 +40,22 @@ body {
     z-index: 1;
 }
 
-#home {
+#main_div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -50px;
-    background-image: linear-gradient(#FFE58A, #FFE58A, #FFE58A, #8A94FF);
+    background-image: linear-gradient(#FFE58A, #8A94FF, #043602, #043602);
     width: 100vw;
-    height: 1024px;
+    height: 100%;
     z-index: -1;
-}
-
-#shapes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    padding-left: -20px;
 }
 
 #parallelogram {
    background-color: #043602;
    width: 80vw;
    height: 824px;
+   margin-top: 200px;
    transform: skew(3deg, 12deg);
-   margin-top: 0px;
    margin-left: 110px;
    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, .25));
    z-index: 1;
@@ -76,7 +70,7 @@ body {
     width: 77vw;
 }
 
-#bio_hello_face {
+#bio_hello {
     display: flex;
     justify-content: space-between;
 }
@@ -88,6 +82,7 @@ body {
     border-radius: 350px;
     border: 2px solid black;
     margin-top: -150px;
+    z-index: 1;
 }
 
 #hello {
@@ -95,27 +90,29 @@ body {
     color: white;
     font-size: 40px;
     z-index: 1;
-    margin-top: -115px;
+    margin-top: -110px;
     margin-right: 1vw;
     margin-left: -1vw;
     transform: skew(-13deg, 12deg);
+ }
+
+ #info_face {
+   display: flex;
  }
 
  #info {
     font-family: "Helvetica Neue";
     z-index: 1;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: -25px;
-    width: 77vw;
-    clear: right;
  }
 
  #social_links {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: -15px;
+    margin-left: -20px;
     align-content: center;
  }
 
@@ -140,8 +137,8 @@ body {
     z-index: 1;
     height: 80px;
     width: 196px;
-    margin-top: 40px;
-    margin-right: 150px;
+    margin-top: 60px;
+    margin-right: 200px;
     border: none;
     border-radius: 40px;
     background-color: #8A94FF;
@@ -161,11 +158,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -30px;
-    background-image: linear-gradient(#8A94FF, #043602);
+    margin-top: 130px;
     width: 100vw;
-    height: 1024px;
-    z-index: -1;
+    z-index: 1;
  }
 
  #projectgram {
@@ -182,13 +177,22 @@ body {
  #projects {
     display: flex;
     flex-direction: column;
-    margin-top: -1010px;
+    margin-top: -1020px;
     margin-left: 130px;
     z-index: 1;
     width: 77vw;
  }
 
- #projects h1 {
+ #contact_reach_out {
+   font-size: 140px;
+   font-family: "HelveticaNeue-CondensedBlack";
+   color: white;
+   text-align: left;
+   -webkit-text-stroke: 2px black;
+   margin-left: 70px;
+}
+
+ #projects_header {
     font-size: 140px;
     font-family: "HelveticaNeue-CondensedBlack";
     color: white;
@@ -270,8 +274,8 @@ body {
  }
 
  #project_card_image {
-    max-width: 15vw;
-    height: 15vw;
+    max-width: 10vw;
+    height: 10vw;
     border: 1px solid black;
     border-radius: 30px;
     margin-bottom: -20px;
@@ -317,7 +321,7 @@ body {
 #meOrNot {
     width: 300px;
     height: 300px;
-    border-radius: 350px;
+    border-radius: 300px;
 }
 
 #contact_div {
@@ -325,10 +329,9 @@ body {
    flex-direction: column;
    justify-content: center;
    margin-top: 0px;
-   background-color: #043602;
    width: 100vw;
    height: 1024px;
-   z-index: -1;
+   z-index: 0;
 }
 
 #contactgram {
@@ -336,10 +339,9 @@ body {
    width: 80vw;
    height: 924px;
    transform: skew(-10deg, 5deg);
-   margin-top: 0px;
+   margin-top: -800px;
    margin-left: 110px;
    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, .25));
-   z-index: 0;
 }
 
 #reach_out {
@@ -353,24 +355,26 @@ body {
 
 #reach_out_header {
    display: flex;
-   justify-content: space-between;
+   justify-content:end;
    align-items: center;
-   margin-top: -1000px;
+   margin-top: -700px;
    margin-left: 50px;
+   width: 57vw;
+   z-index: 1;
 }
 
 #reach_out_header button {
    width: 40px;
-   height:40px;
+   height: 40px;
+   z-index: 1;
 }
 
 #reach_out_header h1 {
    font-size: 140px;
    font-family: "HelveticaNeue-CondensedBlack";
    color: white;
-   text-align: end;
    margin-bottom: 20px;
-   -webkit-text-stroke: 2px black;  
+   -webkit-text-stroke: 2px black;
 }
 
 #contact_form {

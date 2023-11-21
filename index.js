@@ -83,9 +83,17 @@ document.addEventListener("DOMContentLoaded", () => {
             meOrNotImg.attributes.src.value = "images/me.png"
         } else {
             meOrNot = false
-            console.log(meOrNotImg.attributes)
+            meOrNotImg.attributes.src.value = "images/me.svg"
         }
 
+    }
+
+    const contact = document.getElementById("contact")
+    contact.addEventListener('click', () => scrollToContact())
+
+    function scrollToContact(){
+        const contact = document.getElementById("contact_reach_out")
+        contact.scrollIntoView()
     }
 
 })
