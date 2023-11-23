@@ -7,6 +7,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+            emailjs.init("1FRD8OfceVnIcjUZK");
+            })();
+            </script>
         <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
@@ -67,24 +73,24 @@
                 <div id="reach_out_header">
                     <h1>REACH OUT!</h1>
                 </div>
-                <form id="contact_form" action="mailto:jedwardmook@gmail.com" method="get" enctype="text/plain">
+                <form id="contact_form">
                     <div id="contact_form_two">
                         <div id="contact_half_div">
                             <h4>Name:</h4><br>
-                            <input type="text" name="subject" placeholder="Your Name">
+                            <input type="text" id="contactName" placeholder="Your Name">
                         </div>
                         <div id="contact_half_div">
                             <h4>Email:</h4><br>
-                            <input type="email" name="subject" placeholder="Your Name">
+                            <input type="email" id="contactEmail" placeholder="Your Email">
                         </div>
                     </div>
                     <h4>Subject:</h4><br>
-                    <input type="email" name="email" placeholder="Your Email"><br>
+                    <input type="text" id="messageSubject" placeholder="Subject"><br>
                     <h4>Message:</h4><br>
-                    <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
+                    <textarea id="messageBody" rows="5" cols="30" placeholder="Message"></textarea><br>
                     <div id="contact_submit_div">
-                    <button type="submit">
-                        <img src="./images/send.svg" alt="Send Message" title="Send Message">
+                    <button id="submit_button" type="submit">
+                        <img src="./images/send.svg" alt="Send your message" title="Send message">
                     </button>
                     </div>
                 </form>
@@ -97,6 +103,9 @@
                 </p>
             </div> 
         </section>
+        <footer>
+
+        </footer>
     </main>
     </body>
 </html>

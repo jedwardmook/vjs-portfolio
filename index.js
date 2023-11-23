@@ -96,6 +96,33 @@ document.addEventListener("DOMContentLoaded", () => {
         contact.scrollIntoView()
     }
 
+    document.getElementById("submit_button").addEventListener('click', sendMail())
+
+    function sendMail(){
+        document.getElementById("contact_form").addEventListener('submit', function(event) {
+            event.preventDefault()
+            const params = {
+                contactName: document.getElementById('contactName').value,
+                contactEmail: document.getElementById('contactEmail').value,
+                messageSubject: document.getElementById('messageSubject').value,
+                messageBody: document.getElementById('messageBody').value
+            }
+            const serviceID = "service_9s7vueh"
+            const templateID = "template_9kwp1h4"
+
+            emailjs.send(serviceID, templateID, params)
+                .then((response) => {
+                    document.getElementById('contactName').value = '';
+                    document.getElementById('contactEmail').value = '';
+                    document.getElementById('messageSubject').value = '';
+                    document.getElementById('messageBody').value = '';
+                    console.log(response);
+                    alert("Your message sent successfully");
+                })
+                .catch((err) => console.log(err));
+        })
+    }
+
 })
 
 const projects = [
