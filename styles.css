@@ -179,6 +179,7 @@ body {
     flex-direction: column;
     margin-top: -1020px;
     margin-left: 130px;
+    margin-bottom: -110px;
     z-index: 1;
     width: 77vw;
  }
@@ -329,7 +330,6 @@ body {
    flex-direction: column;
    justify-content: center;
    margin-top: 0px;
-   width: 100vw;
    height: 1024px;
    z-index: 0;
 }
@@ -339,7 +339,6 @@ body {
    width: 80vw;
    height: 924px;
    transform: skew(-10deg, 5deg);
-   margin-top: -800px;
    margin-left: 110px;
    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, .25));
 }
@@ -355,17 +354,10 @@ body {
 
 #reach_out_header {
    display: flex;
-   justify-content:end;
-   align-items: center;
-   margin-top: -700px;
-   margin-left: 50px;
-   width: 57vw;
-   z-index: 1;
-}
-
-#reach_out_header button {
-   width: 40px;
-   height: 40px;
+   justify-content: center;
+   margin-top: -620px;
+   margin-bottom: 0px;
+   width: 67vw;
    z-index: 1;
 }
 
@@ -373,8 +365,22 @@ body {
    font-size: 140px;
    font-family: "HelveticaNeue-CondensedBlack";
    color: white;
-   margin-bottom: 20px;
+   margin-top: -120px;
+   margin-bottom: -10px;
    -webkit-text-stroke: 2px black;
+}
+
+#meeting_div{
+   display: flex;
+   font-family: "HelveticaNeue-CondensedBlack";
+   margin-left: 210px;
+   margin-top: -180px;
+   z-index: 1;
+   font-size: 18px;
+}
+
+#meeting_div a {
+   color: white;
 }
 
 #contact_form {
@@ -390,11 +396,11 @@ body {
 
 #contact_form_two {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 #contact_form_two div{
-   width: 30vw;
+   width: 29vw;
 }
 
 #contact_form input {
@@ -402,4 +408,48 @@ body {
    border: 2px solid black;
    height: 40px;
    width: 100%;
+   margin-bottom: -10px;
 }
+
+#contact_form input[type=image] {
+   background-color: #FFE58A;
+   border: 2px solid black;
+   height: 40px;
+   width: 100%;
+   margin-bottom: -10px;
+}
+
+#contact_form textarea {
+   background-color: #FFE58A;
+   border: 2px solid black;
+   height: 120px;
+   width: 100%;
+}
+
+#contact_form button {
+   border: none;
+   cursor: pointer;
+   appearance: none;
+   background-color: inherit;
+}
+
+#contact_submit_div {
+   display: flex;
+   justify-content: end;
+}
+
+#contact_form img {
+   width: 180px;
+   margin-top: 30px;
+   margin-right: 20px;
+   align-items: end;
+   transition:
+      margin-top 1s,
+      margin-right 1s;
+}
+
+#contact_form img:hover {
+   margin-top: -5px;
+   margin-right: -20px;
+}
+

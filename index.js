@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contact.addEventListener('click', () => scrollToContact())
 
     function scrollToContact(){
-        const contact = document.getElementById("contact_reach_out")
+        const contact = document.getElementById("reach_out")
         contact.scrollIntoView()
     }
 

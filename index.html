@@ -15,7 +15,7 @@
             <nav id="header_nav">
                 <a href="#header">Home</a>
                 <a href="#projects_div">Projects</a>
-                <a href="#contact_reach_out">Contact</a>
+                <a href="#reach_out">Contact</a>
             </nav>
         </header>
         <main id="main_div">
@@ -59,16 +59,13 @@
                         <button id="decrease_scroll_button">Left</button>
                         <button id="increase_scroll_button">Right</button>
                     </div>
-                    <div>
-                        <h1 id="contact_reach_out">REACH OUT!</h1>
-                    </div>
                 </div>   
         </section>
         <section id="contact_div">
             <div id="contactgram"></div>
             <div id="reach_out">
                 <div id="reach_out_header">
-                    <button></button>  
+                    <h1>REACH OUT!</h1>
                 </div>
                 <form id="contact_form" action="mailto:jedwardmook@gmail.com" method="get" enctype="text/plain">
                     <div id="contact_form_two">
@@ -85,10 +82,21 @@
                     <input type="email" name="email" placeholder="Your Email"><br>
                     <h4>Message:</h4><br>
                     <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
-                    <input type="submit" value="Send">
+                    <div id="contact_submit_div">
+                    <button type="submit">
+                        <img src="./images/send.svg" alt="Send Message" title="Send Message">
+                    </button>
+                    </div>
                 </form>
             </div>
-            </section>
+            <div id="meeting_div">
+                <p>Send a message or schedule of meeting:
+                <a href="https://calendly.com/jedwardmook">
+                    Calendly
+                </a>.
+                </p>
+            </div> 
+        </section>
     </main>
     </body>
 </html>
