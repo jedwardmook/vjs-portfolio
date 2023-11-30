@@ -210,7 +210,7 @@ body {
     display: flex;
     justify-content: space-around;
     color: white;
-    margin-left: 50px;
+    margin-left: 20px;
     font-family: "HelveticaNeue-CondensedBlack";
  }
 
@@ -233,6 +233,25 @@ body {
     color: black;
     margin-bottom: 0px;
  }
+
+ #hero_project_key_links {
+   font-size: 24px;
+   color: black;
+   margin-bottom: 0px;
+}
+
+#project_link {
+   margin-left: 20px;
+   margin-bottom: -10px;
+}
+
+#project_link a:link {
+   color: #FFE58A;
+}
+
+#project_link a:visited {
+   color: #043602;
+}
 
  #hero_project_key_desc {
     font-size: 24px;
