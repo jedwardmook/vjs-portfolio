@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const face = document.getElementById('face')
     face.addEventListener('click', () => meOrNotToggle())
-    let meOrNot = false
-
-    // <h4 id="hero_project_key">Link:</h4><a href="${links}" class="hero_project_value">${links}</a>
+    let meOrNot = true
 
     function renderHeroProject(project){
         const { projectName, links, description, technologysUsed, image} = project
@@ -103,10 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const contact = document.getElementById("contact")
     contact.addEventListener('click', () => scrollToContact())
+    const contact2 = document.getElementById("nav_reach_out")
+    contact2.addEventListener('click', () => scrollToContact())
 
     function scrollToContact(){
-        const contact = document.getElementById("reach_out")
-        contact.scrollIntoView()
+        const contact = document.getElementById('contactgram')
+        contact.scrollIntoView({block:"end"})
     }
 
     document.getElementById("submit_button").addEventListener('click', sendMail())

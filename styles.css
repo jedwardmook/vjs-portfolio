@@ -216,7 +216,7 @@ body {
 
  #hero_project_info {
     width: 40vw;
-    margin-top: -20px;
+    margin-top: -60px;
  }
 
  #hero_project_image {
@@ -350,6 +350,7 @@ body {
    justify-content: center;
    margin-top: 0px;
    height: 1024px;
+   margin-bottom: 100px;
    z-index: 0;
 }
 
@@ -428,6 +429,8 @@ body {
    height: 40px;
    width: 100%;
    margin-bottom: -10px;
+   padding-left: 5px;
+   font-family: "HelveticaNeue";
 }
 
 #contact_form input[type=image] {
@@ -443,6 +446,8 @@ body {
    border: 2px solid black;
    height: 120px;
    width: 100%;
+   padding-left: 5px;
+   font-family: "HelveticaNeue";
 }
 
 #contact_form button {
@@ -472,3 +477,26 @@ body {
    margin-right: -20px;
 }
 
+#footer_div {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color:#FF6868;
+   height: 100px;
+}
+
+#footer_copy {
+   color:white;
+   font-family: "HelveticaNeue";
+   font-weight: 600;
+   margin-top: 30px;
+}
+
+#footer_nav {
+   display: flex;
+   align-items: center;
+}
+
+#footer_nav a {
+   margin-right: 20px;
+}
