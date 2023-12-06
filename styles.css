@@ -83,6 +83,7 @@ body {
     border: 2px solid black;
     margin-top: -150px;
     z-index: 1;
+    cursor: pointer;
 }
 
 #hello {
@@ -277,6 +278,17 @@ body {
     margin-bottom: -20px;
  }
 
+ #hero_project_viewer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #viewer_image_div {
+   position: fixed;
+   top: 5%;
+ }
+
  #projects_container {
     display: flex;
     justify-content: space-evenly;
@@ -394,7 +406,7 @@ body {
    display: flex;
    font-family: "HelveticaNeue-CondensedBlack";
    margin-left: 210px;
-   margin-top: -180px;
+   margin-top: -190px;
    z-index: 1;
    font-size: 18px;
 }
@@ -482,7 +494,7 @@ body {
    align-items: center;
    justify-content: space-evenly;
    background-color:#FF6868;
-   height: 100px;
+   height: 80px;
 }
 
 #footer_copy {
@@ -490,6 +502,7 @@ body {
    font-family: "HelveticaNeue";
    font-weight: 600;
    margin-top: 30px;
+   font-size: 13px;
 }
 
 #footer_nav {

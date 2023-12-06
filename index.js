@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let initial_hero_project = projects[0]
     const heroProject = document.createElement("div");
     heroProject.id = "hero_project";
+    const heroProjectViewer = document.createElement("div");
+    heroProjectViewer.id = "none"
 
     const projectsContainer = document.getElementById('projects_container')
 
@@ -12,6 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderHeroProject(project){
         const { projectName, links, description, technologysUsed, image} = project
+        function heroProjectImageOnClick (){
+            heroProjectViewer.id = "hero_project_viewer";
+            heroProjectViewer.innerHTML = `
+            <div id="viewer_image_div">
+                <img src=${image} alt=${projectName} id="hero_project_viewer_image" />
+            <div>
+            `
+            heroContainer.append(heroProjectViewer)
+        }
         const heroContainer = document.getElementById("hero_project_container")
         heroProject.innerHTML =`
             <div id="hero_project_info">
@@ -26,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>`;
         heroContainer.append(heroProject);
         const linksContainer = document.getElementById('links')
+        const heroProjectImage =  document.getElementById('hero_project_image')
+        heroProjectImage.addEventListener('click', () => heroProjectImageOnClick())
         createList(links)
         function createList(arr){
             arr.forEach(obj => {
