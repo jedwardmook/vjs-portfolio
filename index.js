@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     heroProjectViewer.id = "none"
 
 
-
     const projectsContainer = document.getElementById('projects_container')
 
     const face = document.getElementById('face')
@@ -40,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 largeImageDiv.id = "viewer_image_div"
                 largeImageDiv.innerHTML = `
                     <img src=${image.link} alt=${image.imageDescription} id="hero_project_viewer_image" />
-                    <p id="hero_project_viewer_description">${image.imageDescription}</p>
+                    <figcaption id="hero_project_viewer_description">${image.imageDescription}</figcaption>
+                    <br />
                 `
                 return largeImageDiv.outerHTML;
             }
@@ -79,12 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
               <h4 id="hero_project_key_desc">Description:</h4><p class="hero_project_value"> ${description}<p>
               <h4 id="hero_project_key">Technologies Used:</h4><p class="hero_project_value"> ${technologysUsed}<p>
             </div>
-            <div>
+            <div id="hero_project_image_div">
                 <img src=${images[0].link} alt="${projectName}" id="hero_project_image"/>
+                <p id="more_photos">More images...</p>
             </div>`;
         heroContainer.append(heroProject);
         const linksContainer = document.getElementById('links')
-        const heroProjectImage =  document.getElementById('hero_project_image')
+        const heroProjectImage =  document.getElementById('hero_project_image_div')
         heroProjectImage.addEventListener('click', () => heroProjectImageOnClick())
         createList(links)
         function createList(arr){
@@ -99,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
     } 
-    
     renderHeroProject(initial_hero_project)
 
     function renderProject(project){
@@ -133,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
             projectsEnd = projectsEnd - 1
             projects.slice(projectsStart,projectsEnd).forEach(renderProject)
         }
-  
     }
 
     function increaseProjects(){
@@ -156,7 +155,6 @@ document.addEventListener("DOMContentLoaded", () => {
             meOrNot = false
             meOrNotImg.attributes.src.value = "images/me.png"
         }
-
     }
 
     const contact = document.getElementById("contact")
@@ -201,10 +199,18 @@ document.addEventListener("DOMContentLoaded", () => {
 const projects = [
     {
         projectName : "Spot Check: Chicago",
-        links : [{Website: "https://spotcheckchicago.onrender.com/"}, {Walkthrough: "https://www.youtube.com/watch?v=QobCGprINfw&t=10s"}, {Repo: "https://github.com/jedwardmook/spot-check-app-clone"}],
+        links : [
+            {Website: "https://spotcheckchicago.onrender.com/"}, 
+            {Walkthrough: "https://www.youtube.com/watch?v=QobCGprINfw&t=10s"}, 
+            {Repo: "https://github.com/jedwardmook/spot-check-app-clone"}],
         description : "Application that utilizes google-maps-api to allow users to add, favorite, and review skatespots usings their real lattitude and longitude.",
         technologysUsed : [" Javascript", " React", " Ruby on Rails", " Sass", " Google Maps Api"],
-        images : [{link: "images/spot_check-2.png", imageDescription: "Main logo for Spot Check - Chicago"}, {link: "images/logo.jpg", imageDescription: "Main logo for Spot Check - Chicago"}, {link: "images/home.gif", imageDescription: "Main logo for Spot Check - Chicago"}, {link: "images/spot_check-2.png", imageDescription: "Main logo for Spot Check - Chicago"}, {link: "images/spot_check-2.png", imageDescription: "Main logo for Spot Check - Chicago"}]
+        images : [
+            {link: "images/SCC-main.jpg", imageDescription: "Collage of components of Spot Check - Chicago"}, 
+            {link: "images/SCC-home.jpg", imageDescription: "Home page featuring spot markers and spot info div"}, 
+            {link: "images/SCC-spot_page.jpg", imageDescription: "Spot page featuring info and images of spot"}, 
+            {link: "images/SCC-reviews.jpg", imageDescription: "Close up of review section of spot page"}, 
+            {link: "images/SCC-addspot.jpg", imageDescription: "UI of the add spot form"}]
     },
     {
         projectName : "HeirBnb",
