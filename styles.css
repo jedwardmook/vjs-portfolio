@@ -339,8 +339,10 @@ body {
  }
 
  #viewer_image_image {
-   width: 7vw;
-   margin-right: 3vw;
+   width: 9vw;
+   margin-right: 1.5vw;
+   margin-left: 1.5vw;
+   cursor: pointer;
  }
 
  #hero_project_viewer_description {
@@ -352,12 +354,18 @@ body {
  #hero_project_images {
    display: flex;
    justify-content: center;
-   margin-top: 25px;
+   margin-top: 10px;
    margin-bottom: 40px;
+   border-top: 1px solid black;
+   padding-top: 10px;
+   border-bottom: 1px solid black;
+   padding-bottom: 10px;
+   width: 58vw;
+   margin-left: 11.5vw;
  }
 
  #hero_project_viewer_image {
-   width: 55vw;
+   width: 54vw;
    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, .25));
  }
 
