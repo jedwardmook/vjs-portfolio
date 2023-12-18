@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             const serviceID = "service_9s7vueh"
             const templateID = "template_9kwp1h4"
-
+            if(params.contactName, params.contactEmail, params.messageSubject, params.messageBody !== ''){
             emailjs.send(serviceID, templateID, params)
                 .then((response) => {
                     document.getElementById('contactName').value = '';
@@ -191,6 +191,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     alert("Your message sent successfully");
                 })
                 .catch((err) => console.log(err));
+            } else {
+                console.log("Params needed")
+            }
         })
     }
 
