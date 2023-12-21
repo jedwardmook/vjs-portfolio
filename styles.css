@@ -88,13 +88,21 @@ body {
 
 #hello {
     font-family: "Helvetica Neue";
+    font-weight: 500;
     color: white;
-    font-size: 40px;
+    font-size: 42px;
     z-index: 1;
     margin-top: -110px;
     margin-right: 1vw;
     margin-left: -1vw;
     transform: skew(-13deg, 12deg);
+ }
+
+ #hello span {
+   font-family: "HelveticaNeue-CondensedBlack";
+   color: #FF6868;
+   -webkit-text-stroke: 1px black;
+   font-weight: 500;
  }
 
  #info_face {
@@ -107,6 +115,10 @@ body {
     color: white;
     font-size: 22px;
     margin-bottom: -25px;
+ }
+
+ #info span {
+   background-color:#FF6868;
  }
 
  #social_links {
