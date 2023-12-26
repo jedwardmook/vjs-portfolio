@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .catch((err) => console.log(err));
             } else {
                 console.log("Params needed")
+                alert("All fields required");
             }
         })
     }
