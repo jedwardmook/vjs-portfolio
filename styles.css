@@ -985,6 +985,7 @@ body {
 
    #info_face {
       flex-direction: column;
+      align-items: center;
    }
 
    #bio {
@@ -993,7 +994,6 @@ body {
 
    #face {
       margin-top: -450px;
-      margin-left: 80px;
    }
 
    #bio_links {
@@ -1056,4 +1056,50 @@ body {
    #footer_copy {
       font-size: 10px;
    }
+}
+
+@media only screen and (max-width:390px){
+   #header {
+      height: 35px
+   }
+
+   #header_logo {
+      font-size: 18px;
+   }
+
+   #header_nav a {
+      font-size: 18px;
+   }
+
+   #face, #meOrNot {
+      width: 165px;
+      height: 165px;
+   }
+
+   #face {
+      margin-top: -430px;
+   }
+
+   #hello {
+      font-size: 22px;
+   }
+
+   #info {
+      font-size: 14px;
+   }
+
+   #reach_out_header {
+      margin-top: -660px
+   }
+
+   #reach_out_header h1 {
+      font-size: 60px;
+   }
+
+   #footer_copy {
+      margin-top: 5px;
+      margin-left: 60px;
+      font-size: 9px;
+   }
+   
 }
