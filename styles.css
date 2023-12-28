@@ -173,6 +173,7 @@ body {
    justify-content: center;
    margin-top: 130px;
    width: 100vw;
+   height: 800px;
    z-index: 1;
  }
 
@@ -1100,6 +1101,16 @@ body {
       margin-top: 5px;
       margin-left: 60px;
       font-size: 9px;
+   }
+
+   #project_card_name {
+      margin-top: 20px;
+      font-size: 10px;
+   }
+
+   #meeting_div {
+      margin-top: -380px;
+      margin-left: 70px;
    }
    
 }
